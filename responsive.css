@@ -1,0 +1,137 @@
+
+html, body {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    #header-row-01, #header-row-02, #slider, #advantages, #about, #service, #portfolio, #process, #people, #skill, #our-project, #contact {
+        padding: 10px 30px;
+    }
+
+    #about div {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #process div {
+        flex-direction: column;
+    }
+    
+    #grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    #skill div {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #our-project form {
+        flex-direction: column;
+    }
+
+    #portfolio div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    #header-row-01 {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    #slider h1 {
+        font-size: 48px;
+    }
+
+    #advantages div, #process div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #portfolio div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #our-project p {
+        margin: 0px 20%;
+    }
+
+    #people p, #service p, #about p, #process p, #skill p {
+        margin: 0px 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    #header-row-02 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #advantages p, #about p, #service p, #portfolio p, #process p, #people p, #skill p, #our-project p {
+        margin: 0px 15%;
+    }
+
+    #slider h1 {
+        font-size: 36px;
+        padding: 0px 10px;
+    }
+
+    #slider p {
+        margin: 24px 10%;
+        font-size: 18px;
+    }
+
+    #advantages div, #process div, #skill div, #service div, #portfolio div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #portfolio div {
+        grid-template-columns: 1fr;
+    }
+
+    #our-project form input, #our-project form button {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #header-row-01, #header-row-02, #slider, #advantages, #about, #service, #portfolio, #process, #people, #skill, #our-project, #contact {
+        padding: 10px 15px;
+    }
+
+    #slider h1 {
+        font-size: 28px;
+    }
+
+    #slider p {
+        font-size: 16px;
+        margin: 24px 8%;
+    }
+
+    #advantages h1, #about h1, #service h1, #portfolio h1, #process h1, #people h1, #skill h1, #contact h1, #our-project h1 {
+        font-size: 36px;
+    }
+
+    #advantages p, #about p, #service p, #portfolio p, #process p, #people p, #skill p, #contact p, #our-project p {
+        font-size: 16px;
+        margin: 0px 5%;
+    }
+
+    #our-project form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #portfolio div img {
+        height: auto;
+    }
+}
